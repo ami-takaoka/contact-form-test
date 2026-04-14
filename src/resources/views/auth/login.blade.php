@@ -6,7 +6,7 @@
 @endsection
 
 @section('css')
-    <!-- 認証関連のスタイルシートを読み込む -->
+    <!-- ログイン・会員登録画面用CSS -->
     <link rel="stylesheet" href="{{ asset('css/auth.css') }}">
 @endsection
 
@@ -26,7 +26,7 @@
                     <label class="form__label">メールアドレス</label>
                     <input class="form__input" type="email" name="email" value="{{ old('email') }}" placeholder="例：test@example.com">
 
-                    <!-- ログインのバリデーションエラー表示 -->
+                    <!-- バリデーションエラー表示 -->
                     @error('email')
                         <p class="form__error">{{ $message }}</p>
                     @enderror
@@ -38,7 +38,7 @@
                     <label class="form__label">パスワード</label>
                     <input class="form__input" type="password" name="password" placeholder="例：coachtech1106">
 
-                    <!-- パスワードのバリデーションエラー表示 -->
+                    <!-- バリデーションエラー表示 -->
                     @error('password')
                         <p class="form__error">{{ $message }}</p>
                     @enderror

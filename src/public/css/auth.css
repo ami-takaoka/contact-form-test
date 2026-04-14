@@ -1,6 +1,5 @@
 body {
     background-color: #ffffff;
-    /* 外側は白 */
     color: #333;
     font-family: 'Yu Gothic', sans-serif;
 }
@@ -31,17 +30,13 @@ main {
 /* ログイン画面用 */
 .auth--login .auth__content {
     width: 500px;
-    /* 横 */
     padding: 35px 50px;
-    /* 縦も少し小さく */
 }
 
 /* 会員登録画面用 */
 .auth--register .auth__content {
     width: 500px;
-    /* 横を広く */
     padding: 45px 70px;
-    /* 縦も広く */
 }
 
 /* 白い枠 */

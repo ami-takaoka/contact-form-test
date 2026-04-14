@@ -15,11 +15,7 @@
 
       <!-- お問い合わせフォーム -->
       <form class="form" action="/confirm" method="post" novalidate>
-            @csrf
-
-            <!-- =============================
-                 お名前
-            ============================== -->
+            @csrf        
             <div class="form__group">
                 <div class="form__group-title">
                     <span class="form__label--item">お名前</span>
@@ -28,8 +24,6 @@
 
                 <div class="form__group-content">
                     <div class="form__input--text">
-
-                        <!-- 姓 -->
                         <div>
                             <input type="text" name="last_name" value="{{ old('last_name') }}" placeholder="例：山田" />
                             <div class="form__error">
@@ -39,7 +33,6 @@
                             </div>
                         </div>
 
-                        <!-- 名 -->
                         <div>
                             <input type="text" name="first_name" value="{{ old('first_name') }}" placeholder="例：太郎" />
                             <div class="form__error">
@@ -53,9 +46,6 @@
                 </div>
             </div>
 
-            <!-- =============================
-                 性別
-            ============================== -->
             <div class="form__group">
                 <div class="form__group-title">
                     <span class="form__label--item">性別</span>
@@ -74,7 +64,6 @@
                         </label>
                     </div>
 
-                    <!-- エラーメッセージ -->
                     <div class="form__error">
                         @error('gender')
                             {{ $message }}
@@ -83,9 +72,7 @@
                 </div>
             </div>
 
-            <!-- =============================
-                 メールアドレス
-            ============================== -->
+
             <div class="form__group">
                 <div class="form__group-title">
                     <span class="form__label--item">メールアドレス</span>
@@ -103,9 +90,6 @@
                 </div>
             </div>
 
-            <!-- =============================
-                 電話番号
-            ============================== -->
             <div class="form__group">
                 <div class="form__group-title">
                     <span class="form__label--item">電話番号</span>
@@ -135,9 +119,6 @@
                 </div>
             </div>
 
-            <!-- =============================
-                 住所
-            ============================== -->
             <div class="form__group">
                 <div class="form__group-title">
                     <span class="form__label--item">住所</span>
@@ -155,9 +136,7 @@
                 </div>
             </div>
 
-            <!-- =============================
-                 建物名（任意）
-            ============================== -->
+            <!-- 建物名（任意） -->
             <div class="form__group">
                 <div class="form__group-title">
                     <span class="form__label--item">建物名</span>
@@ -169,9 +148,6 @@
                 </div>
             </div>
 
-            <!-- =============================
-                 お問い合わせの種類
-            ============================== -->
             <div class="form__group">
                 <div class="form__group-title">
                     <span class="form__label--item">お問い合わせの種類</span>
@@ -189,7 +165,6 @@
                         </select>
                     </div>
 
-                    <!-- エラー -->
                     <div class="form__error">
                         @error('category')
                             {{ $message }}
@@ -198,9 +173,6 @@
                 </div>
             </div>
 
-            <!-- =============================
-                 お問い合わせ内容
-            ============================== -->
             <div class="form__group">
                 <div class="form__group-title">
                     <span class="form__label--item">お問い合わせ内容</span>

@@ -23,7 +23,6 @@
         <div class="confirm-table">
           <table class="confirm-table__inner">
 
-            <!-- お名前 -->
             <tr class="confirm-table__row">
               <th class="confirm-table__header">お名前</th>
               <td class="confirm-table__text">
@@ -37,7 +36,6 @@
               </td>
             </tr>
 
-            <!-- 性別 -->
             <tr class="confirm-table__row">
               <th class="confirm-table__header">性別</th>
               <td class="confirm-table__text">
@@ -56,7 +54,6 @@
               </td>
             </tr>
 
-            <!-- メールアドレス -->
             <tr class="confirm-table__row">
               <th class="confirm-table__header">メールアドレス</th>
               <td class="confirm-table__text">
@@ -65,7 +62,6 @@
               </td>
             </tr>
 
-            <!-- 電話番号 -->
             <tr class="confirm-table__row">
               <th class="confirm-table__header">電話番号</th>
               <td class="confirm-table__text">
@@ -89,7 +85,6 @@
               </td>
             </tr>
 
-            <!-- 建物名（任意） -->
             <tr class="confirm-table__row">
               <th class="confirm-table__header">建物名</th>
               <td class="confirm-table__text">
@@ -98,7 +93,6 @@
               </td>
             </tr>
 
-            <!-- お問い合わせ種類 -->
             <tr class="confirm-table__row">
               <th class="confirm-table__header">お問い合わせの種類</th>
               <td class="confirm-table__text">
@@ -136,16 +130,14 @@
         </div>
 
         <!-- =============================
-             送信ボタン
+             送信・修正ボタン
         ============================== -->
         <div class="form__button">
 
-            <!-- 最終送信 -->
             <button class="form__button-submit" type="submit">
                 送信
             </button>
 
-            <!-- 修正（入力画面へ戻る） -->
             <button type="submit" name="action" value="back" class="form__link">
                 修正
             </button>
