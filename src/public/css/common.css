@@ -1,0 +1,155 @@
+/* =============================
+   リセット・基本設定
+============================= */
+body {
+    /* ブラウザデフォルトの余白削除 */
+    margin: 0;
+
+    /* 基本文字色 */
+    color: #333;
+
+    /* 日本語フォント指定 */
+    font-family: 'Yu Gothic', 'Hiragino Kaku Gothic ProN', sans-serif;
+
+    /* 少し太めの標準文字 */
+    font-weight: 500;
+}
+
+
+/* =============================
+   ヘッダー
+============================= */
+.header {
+    /* 下に薄い境界線 */
+    border-bottom: 1px solid #e0dfde;
+}
+
+.header__inner {
+    /* 子要素を絶対配置するため */
+    position: relative;
+
+    /* 横並び */
+    display: flex;
+
+    /* 縦中央揃え */
+    align-items: center;
+
+    /* 中央寄せ */
+    justify-content: center;
+
+    /* ヘッダー余白 */
+    padding: 40px;
+}
+
+
+/* =============================
+   ロゴ（中央固定）
+============================= */
+.header__logo {
+    /* 中央固定のため絶対配置 */
+    position: absolute;
+
+    /* 横中央 */
+    left: 50%;
+
+    /* 完全中央補正 */
+    transform: translateX(-50%);
+
+    /* ロゴ文字サイズ */
+    font-size: 28px;
+
+    /* 英字用フォント */
+    font-family: 'Playfair Display', serif;
+
+    /* 太さ */
+    font-weight: 500;
+
+    /* 文字間 */
+    letter-spacing: 0.08em;
+
+    /* ロゴカラー */
+    color: #8b7969;
+}
+
+
+/* =============================
+   右上ボタン（login/logout）
+============================= */
+.header__button {
+    /* 右上配置 */
+    position: absolute;
+    right: 120px;
+}
+
+
+/* ヘッダーボタンデザイン */
+.header__link {
+    /* buttonのデフォルトスタイル削除 */
+    all: unset;
+
+    /* インラインブロック化 */
+    display: inline-block;
+
+    /* 内側余白 */
+    padding: 8px 28px;
+
+    /* 背景色 */
+    background-color: #F4F4F4;
+
+    /* 文字色 */
+    color: #8B7969;
+
+    /* 枠線 */
+    border: 1px solid #8B7969;
+
+    /* 文字サイズ */
+    font-size: 13px;
+
+    /* ポインター */
+    cursor: pointer;
+}
+
+/* ホバー時 */
+.header__link:hover {
+    background-color: #eee;
+}
+
+
+/* =============================
+   メインコンテンツ中央寄せ
+============================= */
+main {
+    /* 最大幅（課題指定） */
+    max-width: 1230px;
+
+    /* 中央寄せ */
+    margin: 0 auto;
+
+    /* 内側余白 */
+    padding: 40px 15px;
+}
+
+
+/* =============================
+   フォーム共通フォント
+============================= */
+input,
+textarea,
+select,
+button {
+    /* 英字はPlayfair、日本語はゴシック */
+    font-family: 'Playfair Display', 'Yu Gothic', 'Hiragino Kaku Gothic ProN', sans-serif;
+
+    /* 少し太め */
+    font-weight: 500;
+}
+
+
+/* =============================
+   placeholderフォント
+============================= */
+input::placeholder,
+textarea::placeholder {
+    /* プレースホルダーは英字フォント */
+    font-family: 'Playfair Display', serif;
+}

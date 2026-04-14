@@ -1,0 +1,129 @@
+body {
+    background-color: #ffffff;
+    /* 外側は白 */
+    color: #333;
+    font-family: 'Yu Gothic', sans-serif;
+}
+
+main {
+    background-color: #EDE6DF;
+    padding: 60px 0;
+    min-height: 100vh;
+    max-width: none;
+    width: 100%;
+}
+
+/* フォーム全体中央 */
+.auth {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Register / Login タイトル */
+.auth__heading {
+    text-align: center;
+    color: #8B7969;
+    margin-bottom: 30px;
+    font-family: serif;
+    font-size: 24px;
+}
+
+/* ログイン画面用 */
+.auth--login .auth__content {
+    width: 500px;
+    /* 横 */
+    padding: 35px 50px;
+    /* 縦も少し小さく */
+}
+
+/* 会員登録画面用 */
+.auth--register .auth__content {
+    width: 500px;
+    /* 横を広く */
+    padding: 45px 70px;
+    /* 縦も広く */
+}
+
+/* 白い枠 */
+.auth__content {
+    margin: 0 auto;
+    padding: 40px 60px;
+    background-color: #fff;
+    border: 1px solid #E3DED9;
+    border-radius: 8px;
+}
+
+/* 入力フィールドのラベル設定 */
+.form__label {
+    color: #8B7969;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+/* 入力フィールドにフォーカスが当たったときのスタイル */
+.form__input:focus {
+    outline: none;
+    border-color: #8B7969;
+    box-shadow: 0 0 5px rgba(139, 121, 105, 0.5);
+}
+
+/* 項目名（ラベル）の配置 */
+.form__group-title {
+    width: 100%;
+    padding-top: 10px;
+    text-align: left;
+}
+
+/* 入力項目のスタイル */
+.form__input {
+    width: 100%;
+    padding: 12px;
+    margin: 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #F4F4F4;
+    /* 入力項目の背景色を他画面と統一 */
+    box-sizing: border-box;
+}
+
+/* 入力欄のプレースホルダー文字色 */
+.form__input::placeholder {
+    color: #B8AFA7;
+}
+
+/* 入力行の下部の余白 */
+.form__group {
+    margin-bottom: 32px;
+}
+
+/* プレースホルダーテキストの色 */
+.form__input::placeholder {
+    color: #B8AFA7;
+}
+
+/* ボタンの中央寄せ */
+.form__button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* ログイン/登録ボタンのスタイル */
+.form__button-submit {
+    padding: 10px 40px;
+    background: #82756A;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* エラー時赤文字 */
+.form__error {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 8px;
+    line-height: 1.6;
+    min-height: 38px;
+    display: block;
+}

@@ -1,0 +1,171 @@
+/* 全体中央寄せ */
+.contact-form__content {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 10px 15px;
+    color: #8B7969;
+}
+
+/* タイトル中央 */
+.contact-form__heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-form__heading h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.form {
+    margin: 0 auto;
+    width: 70%;
+}
+
+/* 各行 */
+.form__group {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+/* 左タイトル */
+.form__group-title {
+    width: 30%;
+    padding-top: 10px;
+}
+
+/* 右入力欄 */
+.form__group-content {
+    width: 70%;
+}
+
+/* 必須マーク */
+.form__label--required {
+    color: #FF0000;
+    margin-left: 5px;
+}
+
+
+input[type="radio"] {
+    width: auto;
+    accent-color: #8B7969 !important;
+}
+
+/* 名前横並び */
+.form__input--text {
+    display: flex;
+    gap: 10px;
+}
+
+.form__input--text>div {
+    flex: 1;
+}
+
+/* 性別横並び */
+.form__input--radio {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.form__input--radio label {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* input 共通 */
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #F4F4F4;
+    color: #8B7969;
+    box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-bottom: 1px solid #8B7969;
+}
+
+input[type="radio"]:focus {
+    outline: 1px solid #82756A;
+    outline-offset: 2px;
+}
+
+/* 電話番号 */
+.form__input--tel {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.form__input--tel input {
+    width: calc((100% - 20px) / 3);
+    /* ←3等分 */
+    padding: 10px;
+    border: none;
+    background: #F4F4F4;
+    color: #8B7969;
+    box-sizing: border-box;
+}
+
+.form__input--select select {
+    width: 50%;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background: #F4F4F4;
+    border: none;
+    border-radius: 3px;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%238B7969' height='20' viewBox='0 0 20 20' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M5 7l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 40px;
+
+    padding-right: 30px;
+}
+
+.form__input--select select:focus {
+    border: 1px solid #8B7969;
+}
+
+.form__input--textarea textarea {
+    height: 120px;
+    resize: none;
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+/* ボタン中央 */
+.form__button {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* 送信ボタン */
+.form__button-submit {
+    padding: 10px 40px;
+    background: #82756A;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* エラー時赤文字 */
+.form__error {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 5px;
+    line-height: 1.5;
+}

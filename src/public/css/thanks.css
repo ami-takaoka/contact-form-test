@@ -1,0 +1,52 @@
+.thanks-body {
+    margin: 0;
+    height: 100vh;
+    position: relative;
+}
+
+/* 背景のThank you */
+.thanks-bg {
+    position: fixed;
+    top: 45%;
+    /* 50% → 45% に変更 */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18vw;
+    color: rgba(139, 121, 105, 0.1);
+    white-space: nowrap;
+    z-index: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+/* 中央配置 */
+.thanks__content {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/* メッセージ */
+.thanks__heading h2 {
+    font-size: 26px;
+    color: #8B7969;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/* HOMEボタン*/
+.thanks__home-btn {
+    padding: 6px 28px;
+    /* 小さく */
+    background: #82756A;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+}

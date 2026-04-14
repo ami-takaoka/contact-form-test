@@ -1,0 +1,95 @@
+.confirm__content {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 10px 15px;
+}
+
+.confirm__content .form {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.confirm__heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.confirm__heading h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 28px;
+    margin-top: 0;
+    color: #8B7969;
+}
+
+/* テーブル */
+.confirm-table__inner {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #8B7969;
+}
+
+.confirm-table__row {
+    border-bottom: 1px solid #fff;
+}
+
+/* 左項目 */
+.confirm-table__header {
+    width: 30%;
+    padding: 20px 15px;
+    background: #BAA899;
+    color: #fff;
+    text-align: left;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    font-weight: normal;
+}
+
+/* 右内容 */
+.confirm-table__text {
+    padding: 20px 15px;
+    background: #fff;
+    color: #8B7969;
+    border-bottom: 1px solid #E3DED9;
+}
+
+/* input 表示用 */
+.confirm-table__text input {
+    border: none;
+    width: 100%;
+    color: #8B7969;
+    background: transparent;
+    pointer-events: none;
+    font-size: 16px;
+}
+
+/* フォーム */
+.form {
+    margin: 0 auto;
+    width: 70%;
+}
+
+/* ボタン */
+.form__button {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* 送信ボタン（指定カラー） */
+.form__button-submit {
+    padding: 10px 40px;
+    background: #82756A;
+    color: #fff;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* 戻るリンク */
+.form__link {
+    background: none;
+    border: none;
+    color: #8B7969;
+    text-decoration: underline;
+    cursor: pointer;
+}
